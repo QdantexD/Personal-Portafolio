@@ -36,7 +36,6 @@ CV profesional interactivo y responsive desarrollado con HTML5, CSS3 y JavaScrip
 
 ### Complementarias
 - WebAssembly (WASM)
-- Docker
 - Linux Scripting
 - Git / GitHub
 
