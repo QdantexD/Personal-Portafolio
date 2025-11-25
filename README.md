@@ -42,9 +42,6 @@ CV profesional interactivo y responsive desarrollado con HTML5, CSS3 y JavaScrip
 
 ## 📱 Ver en Vivo
 
-Este CV está desplegado en GitHub Pages:
-**https://[tu-usuario].github.io/[nombre-repositorio]/**
-
 ## 📄 Generar PDF
 
 Para generar un PDF del CV, puedes usar la función "Imprimir" de tu navegador y guardar como PDF, o usar herramientas como Playwright/Puppeteer.
