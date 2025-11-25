@@ -15,32 +15,24 @@
         }
         
         :root {
-            --primary-color: #2563eb;
-            --primary-dark: #1e40af;
-            --primary-light: #3b82f6;
-            --secondary-color: #6366f1;
-            --accent-color: #8b5cf6;
-            --dark-bg: #0f172a;
-            --dark-bg-light: #1e293b;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --text-light: #94a3b8;
-            --border-color: #e2e8f0;
-            --bg-light: #f8fafc;
-            --success: #10b981;
-            --white: #ffffff;
-            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 8px -2px rgba(0, 0, 0, 0.12);
-            --shadow-lg: 0 12px 20px -4px rgba(0, 0, 0, 0.15);
-            --shadow-xl: 0 24px 32px -6px rgba(0, 0, 0, 0.2);
-            --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.15);
+            --dark-bg: #0a192f;
+            --dark-bg-light: #112240;
+            --text-primary: #ccd6f6;
+            --text-secondary: #8892b0;
+            --accent: #64ffda;
+            --accent-dark: #52e3c2;
+            --primary-color: #64ffda;
+            --border-color: #233554;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
         }
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            background-attachment: fixed;
-            padding: 50px 20px;
+            background: var(--dark-bg);
+            padding: 0;
+            margin: 0;
             line-height: 1.6;
             color: var(--text-primary);
             -webkit-font-smoothing: antialiased;
@@ -50,28 +42,22 @@
         }
         
         .cv-container {
-            max-width: 1050px;
+            max-width: 1200px;
             margin: 0 auto;
-            background: var(--white);
-            box-shadow: var(--shadow-xl), var(--shadow-glow);
+            background: var(--dark-bg);
             display: grid;
-            grid-template-columns: 330px 1fr;
-            min-height: auto;
-            border-radius: 16px;
-            overflow: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            grid-template-columns: 300px 1fr;
+            min-height: 100vh;
+            border-left: 1px solid var(--border-color);
         }
         
         /* SIDEBAR IZQUIERDO */
         .sidebar {
-            background: linear-gradient(180deg, var(--dark-bg) 0%, var(--dark-bg-light) 100%);
-            color: var(--white);
-            padding: 50px 38px;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            padding: 40px 30px;
             position: relative;
-            box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.05);
+            border-right: 1px solid var(--border-color);
         }
         
         .sidebar::before {
@@ -102,10 +88,10 @@
         }
         
         .profile-section {
-            text-align: center;
+            text-align: left;
             margin-bottom: 40px;
-            padding-bottom: 35px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
         }
         
         .profile-img {
@@ -203,27 +189,35 @@
         
         .profile-section h1 {
             font-family: 'Poppins', sans-serif;
-            font-size: 27px;
-            font-weight: 700;
+            font-size: 22px;
+            font-weight: 600;
             margin-bottom: 12px;
             line-height: 1.3;
-            color: var(--white);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            letter-spacing: -0.5px;
+            color: var(--text-primary);
+            letter-spacing: -0.3px;
         }
         
         .profile-section .title {
-            color: var(--primary-light);
-            font-size: 16px;
+            color: var(--accent);
+            font-size: 14px;
             font-weight: 500;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             letter-spacing: 0.5px;
         }
         
-        .profile-section .age {
-            color: var(--text-light);
-            font-size: 14px;
+        .profile-section .subtitle {
+            color: var(--text-secondary);
+            font-size: 13px;
             font-weight: 400;
+            line-height: 1.6;
+            margin-top: 8px;
+        }
+        
+        .profile-section .age {
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 5px;
         }
         
         .section {
@@ -236,28 +230,28 @@
         
         .section-title {
             font-family: 'Poppins', sans-serif;
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 600;
-            margin-bottom: 20px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid var(--primary-color);
-            color: var(--primary-light);
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--accent);
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             position: relative;
         }
         
-        .section-title::after {
+        .section-title::before {
             content: '';
             position: absolute;
-            bottom: -2px;
+            bottom: -1px;
             left: 0;
-            width: 40px;
-            height: 2px;
-            background: var(--accent-color);
+            width: 50px;
+            height: 1px;
+            background: var(--accent);
         }
         
         .section-title svg {
@@ -284,22 +278,24 @@
         }
         
         .contact-icon {
-            color: var(--primary-light);
-            min-width: 20px;
+            color: var(--accent);
+            min-width: 18px;
             flex-shrink: 0;
             margin-top: 2px;
+            font-size: 14px;
         }
         
         .contact-item a, .contact-item span {
-            color: rgba(255, 255, 255, 0.9);
+            color: var(--text-secondary);
             text-decoration: none;
             word-break: break-word;
             line-height: 1.5;
+            font-size: 13px;
+            transition: color 0.3s;
         }
         
         .contact-item a:hover {
-            color: var(--primary-light);
-            text-decoration: underline;
+            color: var(--accent);
         }
         
         .skill-item {
@@ -314,34 +310,33 @@
         }
         
         .skill-name {
-            font-size: 13.5px;
+            font-size: 13px;
             font-weight: 500;
-            color: rgba(255, 255, 255, 0.95);
+            color: var(--text-primary);
         }
         
         .skill-percentage {
-            font-size: 12px;
-            color: var(--text-light);
-            font-weight: 600;
+            font-size: 11px;
+            color: var(--text-secondary);
+            font-weight: 500;
         }
         
         .skill-bar {
-            background: rgba(255, 255, 255, 0.12);
-            height: 12px;
-            border-radius: 12px;
+            background: var(--dark-bg-light);
+            height: 6px;
+            border-radius: 3px;
             overflow: hidden;
             position: relative;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-color);
         }
         
         .skill-progress {
-            background: linear-gradient(90deg, var(--primary-color), var(--primary-light), var(--secondary-color));
+            background: var(--accent);
             height: 100%;
-            border-radius: 12px;
+            border-radius: 3px;
             transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
         }
         
         .skill-progress::after {
@@ -376,7 +371,7 @@
         }
         
         .language-name {
-            color: rgba(255, 255, 255, 0.95);
+            color: #ffffff;
             font-weight: 500;
         }
         
@@ -394,7 +389,7 @@
         .interests-list {
             font-size: 13.5px;
             line-height: 2;
-            color: rgba(255, 255, 255, 0.9);
+            color: #ffffff;
         }
         
         .interests-list p {
@@ -406,24 +401,13 @@
         
         /* CONTENIDO PRINCIPAL */
         .main-content {
-            padding: 55px 55px;
-            background: var(--white);
+            padding: 50px 60px;
+            background: var(--dark-bg);
             position: relative;
         }
         
-        .main-content::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
-            opacity: 0.3;
-        }
-        
         .main-section {
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
         
         .main-section:last-child {
@@ -432,57 +416,43 @@
         
         .main-section-title {
             font-family: 'Poppins', sans-serif;
-            font-size: 26px;
+            font-size: 22px;
             color: var(--text-primary);
-            margin-bottom: 28px;
-            padding-bottom: 14px;
-            border-bottom: 3px solid var(--primary-color);
-            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             position: relative;
             letter-spacing: -0.5px;
         }
         
-        .main-section-title::after {
+        .main-section-title::before {
             content: '';
             position: absolute;
-            bottom: -3px;
+            bottom: -1px;
             left: 0;
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
-            border-radius: 2px;
+            width: 60px;
+            height: 1px;
+            background: var(--accent);
         }
         
         .section-icon {
-            color: var(--primary-color);
-            font-size: 24px;
+            color: var(--accent);
+            font-size: 20px;
         }
         
         .profile-text {
             color: var(--text-secondary);
-            font-size: 15.5px;
-            line-height: 1.95;
-            text-align: justify;
-            background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
-            padding: 30px;
-            border-radius: 12px;
-            border-left: 5px solid var(--primary-color);
-            box-shadow: var(--shadow-sm);
-            position: relative;
-        }
-        
-        .profile-text::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-            border-radius: 12px 12px 0 0;
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: left;
+            padding: 0;
+            border-left: 2px solid var(--accent);
+            padding-left: 20px;
+            margin: 0;
         }
         
         .experience-item, .education-item {
@@ -536,7 +506,7 @@
         
         .item-title {
             font-family: 'Poppins', sans-serif;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 600;
             color: var(--text-primary);
             line-height: 1.4;
@@ -555,9 +525,9 @@
         }
         
         .item-company {
-            font-size: 15px;
-            color: var(--text-secondary);
-            margin-bottom: 12px;
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 10px;
             font-weight: 500;
             display: flex;
             align-items: center;
@@ -572,8 +542,9 @@
         
         .item-description {
             font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.8;
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-weight: 400;
         }
         
         .item-description ul {
@@ -640,14 +611,27 @@
         }
         
         .project-card {
-            border: 2px solid var(--border-color);
-            padding: 28px;
-            border-radius: 14px;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            background: var(--white);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            background: var(--dark-bg-light);
             position: relative;
             overflow: hidden;
-            box-shadow: var(--shadow-sm);
+        }
+        
+        .project-card.featured-project {
+            border: 1px solid var(--accent);
+            background: rgba(100, 255, 218, 0.05);
+        }
+        
+        .featured-badge {
+            color: var(--accent);
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
         }
         
         .project-card::before {
@@ -674,15 +658,15 @@
         
         .project-title {
             font-family: 'Poppins', sans-serif;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         
         .project-tech {
             font-size: 12.5px;
-            color: var(--primary-color);
+            color: var(--accent);
             margin-bottom: 12px;
             font-weight: 500;
             display: flex;
@@ -700,7 +684,43 @@
             font-size: 14px;
             color: var(--text-secondary);
             line-height: 1.7;
+            margin-bottom: 18px;
+        }
+        
+        .project-tech-list {
             margin-bottom: 15px;
+        }
+        
+        .project-tech-list strong {
+            color: var(--text-primary);
+            font-size: 13px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .project-tech-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .project-tech-list li {
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            border: 1px solid rgba(100, 255, 218, 0.2);
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
         }
         
         .project-link {
@@ -708,15 +728,15 @@
             align-items: center;
             gap: 6px;
             font-size: 13px;
-            color: var(--primary-color);
+            color: var(--accent);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             transition: all 0.3s;
         }
         
         .project-link:hover {
-            color: var(--primary-dark);
-            gap: 10px;
+            color: var(--text-primary);
+            gap: 8px;
         }
         
         .competencies-grid {
@@ -850,7 +870,8 @@
             }
         }
         
-        @media (max-width: 768px) {
+        /* MOBILE DISABLED - Professional Desktop Design Only */
+        @media (max-width: 1px) {
             body {
                 padding: 20px 10px;
             }
@@ -900,7 +921,8 @@
                     <div class="initials">EA</div>
                 </div>
                 <h1>Eddi Andreé<br>Salazar Matos</h1>
-                <p class="title">Full Stack Developer & Systems Engineer</p>
+                <p class="title">Graphics & Systems Programmer</p>
+                <p class="subtitle">Building high-performance 3D engines and distributed systems.<br>C++ • Vulkan • Rust • GLSL</p>
                 <p class="age">25 años</p>
             </div>
             
@@ -1168,9 +1190,6 @@
                     <span class="section-icon">👨‍💻</span>
                     Perfil Profesional
                 </h2>
-                <p class="profile-text">
-                    Desarrollador Full Stack especializado con expertise único que combina desarrollo web moderno y programación de sistemas de alto rendimiento. Domino el stack completo desde frontend (JavaScript, TypeScript, Angular, React, Vue) hasta backend productivo (Python, Node.js, SQL) y tecnologías de sistemas avanzadas (C++, Rust, Assembly). Mi diferenciador competitivo radica en la capacidad de trabajar con tecnologías élite como Vulkan y Qt, permitiéndome abordar proyectos que requieren tanto interfaces modernas como performance de bajo nivel. Esta combinación de Full Stack + Systems Engineering me posiciona en un nivel superior, capaz de resolver desafíos técnicos complejos que van desde aplicaciones web escalables hasta sistemas de alto rendimiento y gráficos avanzados. Busco oportunidades donde pueda aplicar esta combinación única de habilidades para crear soluciones innovadoras y de alto impacto.
-                </p>
             </div>
             
             <div class="main-section">
@@ -1186,30 +1205,10 @@
                     </div>
                     <p class="item-company">YouTube, Udemy & Plataformas Online</p>
                     <div class="item-description">
-                        Formación autodidacta continua y estructurada abarcando desarrollo Full Stack y sistemas, acumulando más de 1,500 horas de estudio especializado. Me mantengo constantemente actualizado mediante cursos especializados en Udemy, documentación oficial y contenido educativo de calidad en YouTube. Mi enfoque combina aprendizaje teórico sólido con aplicación práctica inmediata, desarrollando proyectos reales que demuestran dominio tanto en tecnologías web modernas (JavaScript, TypeScript, Angular, React, Vue, Python, Node.js) como en sistemas de alto rendimiento (C++, Rust, Assembly). Mi formación incluye especialización en tecnologías élite como Vulkan y Qt, diferenciándome en el mercado. Comprometido con la mejora continua, profundizo constantemente en áreas técnicas para estar siempre preparado ante desafíos complejos y exigentes del mercado actual.
+                        Self-taught Graphics & Systems Programming. 1,500+ hours of structured learning through real projects. Specialized in elite technologies: Vulkan, C++, Rust, GLSL. Continuous improvement and technical mastery.
                     </div>
                 </div>
                 
-                <div class="education-item">
-                    <div class="item-header">
-                        <h3 class="item-title">Certificaciones Completadas</h3>
-                    </div>
-                    <div class="item-description">
-                        <ul>
-                            <li><strong>JavaScript Moderno ES6+</strong> - Udemy</li>
-                            <li><strong>TypeScript Completo</strong> - Udemy</li>
-                            <li><strong>React: De Cero a Experto</strong> - Udemy</li>
-                            <li><strong>Angular Completo</strong> - Udemy</li>
-                            <li><strong>Vue.js desde Cero</strong> - Udemy</li>
-                            <li><strong>Python para Desarrollo Web</strong> - Udemy</li>
-                            <li><strong>Node.js y Express</strong> - Udemy</li>
-                            <li><strong>SQL y Bases de Datos</strong> - Udemy</li>
-                            <li><strong>Git & GitHub</strong> - Udemy</li>
-                            <li><strong>C++ Moderno</strong> - Plataformas Online</li>
-                            <li><strong>Rust Fundamentals</strong> - Documentación Oficial</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             
             <div class="main-section">
@@ -1220,20 +1219,17 @@
                 
                 <div class="experience-item">
                     <div class="item-header">
-                        <h3 class="item-title">Desarrollador Full Stack - Proyectos Personales</h3>
+                        <h3 class="item-title">Graphics & Systems Programmer</h3>
                         <span class="item-period">2023 - Presente</span>
                     </div>
-                    <p class="item-company">Desarrollo Independiente | GitHub Portfolio</p>
+                    <p class="item-company">Independent Projects | GitHub Portfolio</p>
                     <div class="item-description">
                         <ul>
-                            <li>Desarrollo Full Stack de aplicaciones web completas utilizando tecnologías frontend (JavaScript, TypeScript, Angular, React, Vue) y backend (Python, Node.js, SQL)</li>
-                            <li>Construcción de arquitecturas escalables desde frontend hasta bases de datos, implementando APIs REST y manejando estados complejos en aplicaciones de producción</li>
-                            <li>Implementación de interfaces responsive con Mobile First approach, garantizando experiencias óptimas en todos los dispositivos y navegadores</li>
-                            <li>Desarrollo de sistemas de alto rendimiento utilizando C++ y Rust para proyectos que requieren performance de bajo nivel y control de memoria avanzado</li>
-                            <li>Implementación de gráficos avanzados y motores de interfaz utilizando Vulkan y Qt, diferenciándome en proyectos que requieren rendering de alto nivel</li>
-                            <li>Gestión profesional del ciclo de vida del código con Git/GitHub, aplicando prácticas de código limpio, componentes modulares y principios SOLID</li>
-                            <li>Optimización continua de performance utilizando herramientas modernas, debugging sistemático y técnicas avanzadas de optimización web y sistemas</li>
-                            <li>Exploración activa de tecnologías emergentes como WebAssembly (WASM), manteniéndome actualizado con las últimas tendencias</li>
+                            <li>Sistemas de alto rendimiento: C++ y Rust para performance de bajo nivel y control de memoria</li>
+                            <li>Gráficos avanzados: implementación de motores con Vulkan para rendering profesional</li>
+                            <li>Programación de sistemas: desarrollo de motores 3D, optimización de memoria y pipelines</li>
+                            <li>Código profesional: Git/GitHub, código limpio, arquitectura modular</li>
+                            <li>Optimización: debugging sistemático, profiling y técnicas avanzadas de performance</li>
                         </ul>
                     </div>
                 </div>
@@ -1246,78 +1242,46 @@
                 </h2>
                 
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <h3 class="project-title">🎨 Portfolio Personal con Angular</h3>
-                        <p class="project-tech">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>Responsive Design</span>
-                        </p>
+                    <!-- PROYECTO DESTACADO: MOTOR VULKAN -->
+                    <div class="project-card featured-project">
+                        <div class="featured-badge">⭐ Featured Project</div>
+                        <h3 class="project-title">🏆 Minimalist Render Engine</h3>
                         <p class="project-description">
-                            Single Page Application profesional desarrollada con Angular y TypeScript, demostrando dominio en arquitectura de componentes y patrones avanzados. Implementación completa de routing dinámico, componentes modulares reutilizables y personalización avanzada con servicios inyectables. Diseño moderno completamente responsive con optimizaciones de performance y mejores prácticas de Angular aplicadas consistentemente.
+                            High-performance 3D render engine built from scratch with C++ and Vulkan API. Implemented complete graphics pipeline including swapchain, render passes, vertex/index buffers, uniform buffer objects, descriptor sets, and semaphore/fence synchronization. Renders animated 3D colored cube demonstrating expertise in systems programming and low-level graphics. This project showcases elite-level technologies that differentiate advanced systems developers.
                         </p>
-                        <a href="https://qdantexd.github.io/Angular-1-Portfolio/" target="_blank" class="project-link">Ver Proyecto →</a>
+                        <div class="project-tech-list">
+                            <strong>Tech Stack:</strong>
+                            <ul>
+                                <li>C++</li>
+                                <li>Vulkan API</li>
+                                <li>GLM</li>
+                                <li>GLSL</li>
+                                <li>CMake</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/QdantexD/Motor-de-Render-Minimalista.git" target="_blank" class="project-link">GitHub →</a>
+                        </div>
                     </div>
                     
                     <div class="project-card">
-                        <h3 class="project-title">💼 Portfolio Web Profesional</h3>
-                        <p class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>UI/UX Design</span>
-                            <span>SEO</span>
-                        </p>
+                        <h3 class="project-title">⚔️ Battle.net Clone</h3>
                         <p class="project-description">
-                            Portfolio completo y profesional desarrollado con enfoque en UX excepcional. Incluye secciones estratégicamente diseñadas para servicios, educación, experiencia y contacto. Implementación de animaciones CSS avanzadas, formulario completamente funcional con validación robusta, y optimización exhaustiva de performance. Totalmente responsive utilizando técnicas modernas, garantizando una experiencia fluida en todos los dispositivos y navegadores.
+                            Professional Battle.net interface replica built with Angular. Demonstrates advanced reactive components, injectable services, dynamic routing, and RxJS state management. Precise implementation of original design with smooth animations, complex navigation, and scalable architecture.
                         </p>
-                        <a href="https://qdantexd.github.io/Web-Portfolio-Personal-1/" target="_blank" class="project-link">Ver Proyecto →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3 class="project-title">🎥 Clon de YouTube</h3>
-                        <p class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS Grid</span>
-                            <span>JavaScript</span>
-                            <span>Responsive Layout</span>
-                        </p>
-                        <p class="project-description">
-                            Réplica funcional y precisa de la interfaz de YouTube, demostrando habilidades avanzadas en CSS Grid, Flexbox y layouts complejos. Implementación meticulosa del diseño pixel-perfect, componentes interactivos con JavaScript vanilla y navegación fluida. Este proyecto evidencia mi capacidad para analizar, descomponer y reconstruir interfaces complejas, aplicando técnicas de reverse engineering y atención meticulosa al detalle.
-                        </p>
-                        <a href="https://qdantexd.github.io/Clon-youtube/" target="_blank" class="project-link">Ver Proyecto →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3 class="project-title">⚔️ Clon de Battle.net - Angular</h3>
-                        <p class="project-tech">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>RxJS</span>
-                            <span>CSS3</span>
-                            <span>Responsive Design</span>
-                        </p>
-                        <p class="project-description">
-                            Réplica profesional de la interfaz de Battle.net desarrollada completamente con Angular. Demuestra dominio avanzado en componentes reactivos, servicios inyectables, routing dinámico y manejo de estado con RxJS. Implementación precisa del diseño original con animaciones fluidas, navegación compleja y arquitectura escalable. Este proyecto evidencia mi capacidad para recrear interfaces de alta calidad de empresas líderes en la industria del gaming, aplicando mejores prácticas de Angular y diseño de componentes modulares.
-                        </p>
-                        <a href="https://qdantexd.github.io/Angular-2/" target="_blank" class="project-link">Ver Proyecto →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3 class="project-title">🎮 Motor de Render Minimalista - C++/Vulkan</h3>
-                        <p class="project-tech">
-                            <span>C++</span>
-                            <span>Vulkan API</span>
-                            <span>GLM</span>
-                            <span>GLSL</span>
-                            <span>CMake</span>
-                        </p>
-                        <p class="project-description">
-                            Motor gráfico minimalista desarrollado en C++ usando Vulkan API para renderizado 3D de alto rendimiento. Implementación completa del pipeline de gráficos incluyendo swapchain, render passes, pipelines configurables, buffers de vértices/índices, uniform buffer objects (UBO), descriptor sets y sincronización con semáforos/fences. Renderiza un cubo colorido animado con rotación en tiempo real, demostrando dominio en programación de sistemas, gráficos de bajo nivel y APIs nativas. Este proyecto evidencia mi expertise en tecnologías élite que diferencian a desarrolladores de sistemas avanzados.
-                        </p>
-                        <a href="https://github.com/QdantexD/Motor-de-Render-Minimalista.git" target="_blank" class="project-link">Ver Repositorio →</a>
+                        <div class="project-tech-list">
+                            <strong>Tech Stack:</strong>
+                            <ul>
+                                <li>Angular</li>
+                                <li>TypeScript</li>
+                                <li>RxJS</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://qdantexd.github.io/Angular-2/" target="_blank" class="project-link">Demo →</a>
+                            <a href="https://github.com/QdantexD/Angular-2" target="_blank" class="project-link">GitHub →</a>
+                        </div>
                     </div>
                 </div>
             </div>

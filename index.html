@@ -35,20 +35,20 @@
             --primary-light: #3b82f6;
             --secondary-color: #6366f1;
             --accent-color: #8b5cf6;
-            --dark-bg: #0f172a;
-            --dark-bg-light: #1e293b;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --text-light: #94a3b8;
-            --border-color: #e2e8f0;
-            --bg-light: #f8fafc;
+            --dark-bg: #0a0f1a;
+            --dark-bg-light: #151b2e;
+            --text-primary: #000000;
+            --text-secondary: #1e293b;
+            --text-light: #64748b;
+            --border-color: #cbd5e1;
+            --bg-light: #ffffff;
             --success: #10b981;
             --white: #ffffff;
-            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 8px -2px rgba(0, 0, 0, 0.12);
-            --shadow-lg: 0 12px 20px -4px rgba(0, 0, 0, 0.15);
-            --shadow-xl: 0 24px 32px -6px rgba(0, 0, 0, 0.2);
-            --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.15);
+            --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+            --shadow-lg: 0 12px 20px -4px rgba(0, 0, 0, 0.2);
+            --shadow-xl: 0 24px 32px -6px rgba(0, 0, 0, 0.25);
+            --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.2);
         }
         
         body {
@@ -306,7 +306,7 @@
         }
         
         .contact-item a, .contact-item span {
-            color: rgba(255, 255, 255, 0.9);
+            color: #ffffff;
             text-decoration: none;
             word-break: break-word;
             line-height: 1.5;
@@ -331,7 +331,7 @@
         .skill-name {
             font-size: 13.5px;
             font-weight: 500;
-            color: rgba(255, 255, 255, 0.95);
+            color: #ffffff;
         }
         
         .skill-percentage {
@@ -391,7 +391,7 @@
         }
         
         .language-name {
-            color: rgba(255, 255, 255, 0.95);
+            color: #ffffff;
             font-weight: 500;
         }
         
@@ -409,7 +409,7 @@
         .interests-list {
             font-size: 13.5px;
             line-height: 2;
-            color: rgba(255, 255, 255, 0.9);
+            color: #ffffff;
         }
         
         .interests-list p {
@@ -438,7 +438,7 @@
         }
         
         .main-section {
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
         
         .main-section:last-child {
@@ -447,17 +447,17 @@
         
         .main-section-title {
             font-family: 'Poppins', sans-serif;
-            font-size: 26px;
+            font-size: 24px;
             color: var(--text-primary);
-            margin-bottom: 28px;
-            padding-bottom: 14px;
+            margin-bottom: 22px;
+            padding-bottom: 12px;
             border-bottom: 3px solid var(--primary-color);
             font-weight: 700;
             display: flex;
             align-items: center;
             gap: 12px;
             position: relative;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.3px;
         }
         
         .main-section-title::after {
@@ -478,11 +478,11 @@
         
         .profile-text {
             color: var(--text-secondary);
-            font-size: 15.5px;
-            line-height: 1.95;
+            font-size: 15px;
+            line-height: 1.8;
             text-align: justify;
             background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
-            padding: 30px;
+            padding: 25px;
             border-radius: 12px;
             border-left: 5px solid var(--primary-color);
             box-shadow: var(--shadow-sm);
@@ -551,7 +551,7 @@
         
         .item-title {
             font-family: 'Poppins', sans-serif;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 600;
             color: var(--text-primary);
             line-height: 1.4;
@@ -570,9 +570,9 @@
         }
         
         .item-company {
-            font-size: 15px;
-            color: var(--text-secondary);
-            margin-bottom: 12px;
+            font-size: 14px;
+            color: var(--text-primary);
+            margin-bottom: 10px;
             font-weight: 500;
             display: flex;
             align-items: center;
@@ -587,8 +587,9 @@
         
         .item-description {
             font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.8;
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-weight: 400;
         }
         
         .item-description ul {
@@ -656,8 +657,8 @@
         
         .project-card {
             border: 2px solid var(--border-color);
-            padding: 28px;
-            border-radius: 14px;
+            padding: 22px;
+            border-radius: 12px;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             background: var(--white);
             position: relative;
@@ -712,9 +713,9 @@
         }
         
         .project-description {
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.7;
+            font-size: 13.5px;
+            color: var(--text-primary);
+            line-height: 1.6;
             margin-bottom: 15px;
         }
         
@@ -1184,7 +1185,7 @@
                     Perfil Profesional
                 </h2>
                 <p class="profile-text">
-                    Desarrollador Full Stack especializado con expertise único que combina desarrollo web moderno y programación de sistemas de alto rendimiento. Domino el stack completo desde frontend (JavaScript, TypeScript, Angular, React, Vue) hasta backend productivo (Python, Node.js, SQL) y tecnologías de sistemas avanzadas (C++, Rust, Assembly). Mi diferenciador competitivo radica en la capacidad de trabajar con tecnologías élite como Vulkan y Qt, permitiéndome abordar proyectos que requieren tanto interfaces modernas como performance de bajo nivel. Esta combinación de Full Stack + Systems Engineering me posiciona en un nivel superior, capaz de resolver desafíos técnicos complejos que van desde aplicaciones web escalables hasta sistemas de alto rendimiento y gráficos avanzados. Busco oportunidades donde pueda aplicar esta combinación única de habilidades para crear soluciones innovadoras y de alto impacto.
+                    Desarrollador Full Stack & Systems Engineer con expertise único: desarrollo web moderno (JavaScript, TypeScript, Angular, React, Vue, Python, Node.js) + programación de sistemas (C++, Rust, Vulkan, Assembly). Especializado en tecnologías élite como Vulkan para gráficos de alto rendimiento. Combinación Full Stack + Systems Engineering que permite resolver desde aplicaciones web escalables hasta sistemas de bajo nivel. Busco oportunidades para aplicar esta combinación única de habilidades en proyectos innovadores.
                 </p>
             </div>
             
@@ -1201,7 +1202,7 @@
                     </div>
                     <p class="item-company">YouTube, Udemy & Plataformas Online</p>
                     <div class="item-description">
-                        Formación autodidacta continua y estructurada abarcando desarrollo Full Stack y sistemas, acumulando más de 1,500 horas de estudio especializado. Me mantengo constantemente actualizado mediante cursos especializados en Udemy, documentación oficial y contenido educativo de calidad en YouTube. Mi enfoque combina aprendizaje teórico sólido con aplicación práctica inmediata, desarrollando proyectos reales que demuestran dominio tanto en tecnologías web modernas (JavaScript, TypeScript, Angular, React, Vue, Python, Node.js) como en sistemas de alto rendimiento (C++, Rust, Assembly). Mi formación incluye especialización en tecnologías élite como Vulkan y Qt, diferenciándome en el mercado. Comprometido con la mejora continua, profundizo constantemente en áreas técnicas para estar siempre preparado ante desafíos complejos y exigentes del mercado actual.
+                        Más de 1,500 horas de formación autodidacta estructurada en Full Stack y sistemas. Aprendizaje práctico mediante proyectos reales demostrando dominio en tecnologías web modernas y sistemas de alto rendimiento. Especialización en tecnologías élite: Vulkan, Qt, C++, Rust. Mejora continua y actualización constante ante desafíos técnicos complejos.
                     </div>
                 </div>
                 
@@ -1211,17 +1212,9 @@
                     </div>
                     <div class="item-description">
                         <ul>
-                            <li><strong>JavaScript Moderno ES6+</strong> - Udemy</li>
-                            <li><strong>TypeScript Completo</strong> - Udemy</li>
-                            <li><strong>React: De Cero a Experto</strong> - Udemy</li>
-                            <li><strong>Angular Completo</strong> - Udemy</li>
-                            <li><strong>Vue.js desde Cero</strong> - Udemy</li>
-                            <li><strong>Python para Desarrollo Web</strong> - Udemy</li>
-                            <li><strong>Node.js y Express</strong> - Udemy</li>
-                            <li><strong>SQL y Bases de Datos</strong> - Udemy</li>
-                            <li><strong>Git & GitHub</strong> - Udemy</li>
-                            <li><strong>C++ Moderno</strong> - Plataformas Online</li>
-                            <li><strong>Rust Fundamentals</strong> - Documentación Oficial</li>
+                            <li><strong>JavaScript ES6+</strong> • <strong>TypeScript</strong> • <strong>React</strong> • <strong>Angular</strong> • <strong>Vue.js</strong></li>
+                            <li><strong>Python</strong> • <strong>Node.js</strong> • <strong>SQL/Bases de Datos</strong></li>
+                            <li><strong>C++</strong> • <strong>Rust</strong> • <strong>Vulkan</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -1241,14 +1234,14 @@
                     <p class="item-company">Desarrollo Independiente | GitHub Portfolio</p>
                     <div class="item-description">
                         <ul>
-                            <li>Desarrollo Full Stack de aplicaciones web completas utilizando tecnologías frontend (JavaScript, TypeScript, Angular, React, Vue) y backend (Python, Node.js, SQL)</li>
-                            <li>Construcción de arquitecturas escalables desde frontend hasta bases de datos, implementando APIs REST y manejando estados complejos en aplicaciones de producción</li>
-                            <li>Implementación de interfaces responsive con Mobile First approach, garantizando experiencias óptimas en todos los dispositivos y navegadores</li>
-                            <li>Desarrollo de sistemas de alto rendimiento utilizando C++ y Rust para proyectos que requieren performance de bajo nivel y control de memoria avanzado</li>
-                            <li>Implementación de gráficos avanzados y motores de interfaz utilizando Vulkan y Qt, diferenciándome en proyectos que requieren rendering de alto nivel</li>
-                            <li>Gestión profesional del ciclo de vida del código con Git/GitHub, aplicando prácticas de código limpio, componentes modulares y principios SOLID</li>
-                            <li>Optimización continua de performance utilizando herramientas modernas, debugging sistemático y técnicas avanzadas de optimización web y sistemas</li>
-                            <li>Exploración activa de tecnologías emergentes como WebAssembly (WASM), manteniéndome actualizado con las últimas tendencias</li>
+                            <li>Desarrollo Full Stack: aplicaciones web con frontend moderno (Angular, React, Vue) y backend productivo (Python, Node.js, SQL)</li>
+                            <li>Arquitecturas escalables: APIs REST, manejo de estados complejos, bases de datos optimizadas</li>
+                            <li>Interfaces responsive: Mobile First, optimización cross-device y cross-browser</li>
+                            <li>Sistemas de alto rendimiento: C++ y Rust para performance de bajo nivel y control de memoria</li>
+                            <li>Gráficos avanzados: implementación de motores con Vulkan y Qt para rendering profesional</li>
+                            <li>Código profesional: Git/GitHub, código limpio, componentes modulares, principios SOLID</li>
+                            <li>Optimización: debugging sistemático, técnicas avanzadas de performance web y sistemas</li>
+                            <li>Tecnologías emergentes: WebAssembly (WASM) y herramientas modernas</li>
                         </ul>
                     </div>
                 </div>
@@ -1261,32 +1254,63 @@
                 </h2>
                 
                 <div class="projects-grid">
+                    <!-- PROYECTO DESTACADO: MOTOR VULKAN -->
+                    <div class="project-card" style="border: 3px solid var(--primary-color); box-shadow: var(--shadow-lg), 0 0 20px rgba(37, 99, 235, 0.3); background: linear-gradient(135deg, rgba(37, 99, 235, 0.02), rgba(139, 92, 246, 0.02));">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                            <span style="background: linear-gradient(135deg, #2563eb, #8b5cf6); color: white; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">⭐ Proyecto Destacado</span>
+                        </div>
+                        <h3 class="project-title">🎮 Motor de Render - C++/Vulkan</h3>
+                        <p class="project-tech">
+                            <span>C++</span>
+                            <span>Vulkan API</span>
+                            <span>GLM</span>
+                            <span>GLSL</span>
+                            <span>CMake</span>
+                        </p>
+                        <p class="project-description">
+                            Motor gráfico en C++ con Vulkan API. Pipeline completo: swapchain, render passes, buffers, UBOs, descriptor sets, sincronización. Renderiza cubo 3D animado demostrando dominio en programación de sistemas y gráficos de bajo nivel.
+                        </p>
+                        <a href="https://github.com/QdantexD/Motor-de-Render-Minimalista.git" target="_blank" class="project-link">Ver Repositorio →</a>
+                    </div>
+                    
                     <div class="project-card">
-                        <h3 class="project-title">🎨 Portfolio Personal con Angular</h3>
+                        <h3 class="project-title">⚔️ Clon de Battle.net - Angular</h3>
+                        <p class="project-tech">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>RxJS</span>
+                            <span>CSS3</span>
+                        </p>
+                        <p class="project-description">
+                            Réplica profesional de Battle.net con Angular. Componentes reactivos, servicios inyectables, routing dinámico, RxJS. Arquitectura escalable aplicando mejores prácticas de Angular.
+                        </p>
+                        <a href="https://qdantexd.github.io/Angular-2/" target="_blank" class="project-link">Ver Proyecto →</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3 class="project-title">🎨 Portfolio Angular</h3>
                         <p class="project-tech">
                             <span>Angular</span>
                             <span>TypeScript</span>
                             <span>HTML5</span>
                             <span>CSS3</span>
-                            <span>Responsive Design</span>
                         </p>
                         <p class="project-description">
-                            Single Page Application profesional desarrollada con Angular y TypeScript, demostrando dominio en arquitectura de componentes y patrones avanzados. Implementación completa de routing dinámico, componentes modulares reutilizables y personalización avanzada con servicios inyectables. Diseño moderno completamente responsive con optimizaciones de performance y mejores prácticas de Angular aplicadas consistentemente.
+                            SPA profesional con Angular y TypeScript. Routing dinámico, componentes modulares, servicios inyectables. Diseño responsive con optimizaciones de performance.
                         </p>
                         <a href="https://qdantexd.github.io/Angular-1-Portfolio/" target="_blank" class="project-link">Ver Proyecto →</a>
                     </div>
                     
                     <div class="project-card">
-                        <h3 class="project-title">💼 Portfolio Web Profesional</h3>
+                        <h3 class="project-title">💼 Portfolio Web</h3>
                         <p class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>UI/UX Design</span>
-                            <span>SEO</span>
+                            <span>UI/UX</span>
                         </p>
                         <p class="project-description">
-                            Portfolio completo y profesional desarrollado con enfoque en UX excepcional. Incluye secciones estratégicamente diseñadas para servicios, educación, experiencia y contacto. Implementación de animaciones CSS avanzadas, formulario completamente funcional con validación robusta, y optimización exhaustiva de performance. Totalmente responsive utilizando técnicas modernas, garantizando una experiencia fluida en todos los dispositivos y navegadores.
+                            Portfolio completo con enfoque UX. Animaciones CSS, formulario funcional, optimización de performance. Totalmente responsive.
                         </p>
                         <a href="https://qdantexd.github.io/Web-Portfolio-Personal-1/" target="_blank" class="project-link">Ver Proyecto →</a>
                     </div>
@@ -1297,42 +1321,11 @@
                             <span>HTML5</span>
                             <span>CSS Grid</span>
                             <span>JavaScript</span>
-                            <span>Responsive Layout</span>
                         </p>
                         <p class="project-description">
-                            Réplica funcional y precisa de la interfaz de YouTube, demostrando habilidades avanzadas en CSS Grid, Flexbox y layouts complejos. Implementación meticulosa del diseño pixel-perfect, componentes interactivos con JavaScript vanilla y navegación fluida. Este proyecto evidencia mi capacidad para analizar, descomponer y reconstruir interfaces complejas, aplicando técnicas de reverse engineering y atención meticulosa al detalle.
+                            Réplica pixel-perfect de YouTube. CSS Grid avanzado, Flexbox, componentes interactivos. Demuestra habilidades en reverse engineering y layouts complejos.
                         </p>
                         <a href="https://qdantexd.github.io/Clon-youtube/" target="_blank" class="project-link">Ver Proyecto →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3 class="project-title">⚔️ Clon de Battle.net - Angular</h3>
-                        <p class="project-tech">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>RxJS</span>
-                            <span>CSS3</span>
-                            <span>Responsive Design</span>
-                        </p>
-                        <p class="project-description">
-                            Réplica profesional de la interfaz de Battle.net desarrollada completamente con Angular. Demuestra dominio avanzado en componentes reactivos, servicios inyectables, routing dinámico y manejo de estado con RxJS. Implementación precisa del diseño original con animaciones fluidas, navegación compleja y arquitectura escalable. Este proyecto evidencia mi capacidad para recrear interfaces de alta calidad de empresas líderes en la industria del gaming, aplicando mejores prácticas de Angular y diseño de componentes modulares.
-                        </p>
-                        <a href="https://qdantexd.github.io/Angular-2/" target="_blank" class="project-link">Ver Proyecto →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3 class="project-title">🎮 Motor de Render Minimalista - C++/Vulkan</h3>
-                        <p class="project-tech">
-                            <span>C++</span>
-                            <span>Vulkan API</span>
-                            <span>GLM</span>
-                            <span>GLSL</span>
-                            <span>CMake</span>
-                        </p>
-                        <p class="project-description">
-                            Motor gráfico minimalista desarrollado en C++ usando Vulkan API para renderizado 3D de alto rendimiento. Implementación completa del pipeline de gráficos incluyendo swapchain, render passes, pipelines configurables, buffers de vértices/índices, uniform buffer objects (UBO), descriptor sets y sincronización con semáforos/fences. Renderiza un cubo colorido animado con rotación en tiempo real, demostrando dominio en programación de sistemas, gráficos de bajo nivel y APIs nativas. Este proyecto evidencia mi expertise en tecnologías élite que diferencian a desarrolladores de sistemas avanzados.
-                        </p>
-                        <a href="https://github.com/QdantexD/Motor-de-Render-Minimalista.git" target="_blank" class="project-link">Ver Repositorio →</a>
                     </div>
                 </div>
             </div>
