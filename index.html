@@ -313,6 +313,38 @@
             color: var(--accent);
         }
         
+        /* Botón Descargar CV */
+        .download-cv-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 12px 20px;
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .download-cv-btn:hover {
+            background: var(--accent);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(100, 255, 218, 0.3);
+        }
+        
+        .download-cv-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+        
         .skill-item {
             margin-bottom: 14px;
         }
@@ -1118,7 +1150,7 @@
                 </h3>
                 <div class="contact-item">
                     <span class="contact-icon">✉</span>
-                    <a href="mailto:chodanteq@gmail.com">chodanteq@gmail.com</a>
+                    <a href="mailto:eddi.salazar.dev@gmail.com">eddi.salazar.dev@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <span class="contact-icon">📱</span>
@@ -1126,7 +1158,7 @@
                 </div>
                 <div class="contact-item">
                     <span class="contact-icon">📍</span>
-                    <span>Lima, Perú</span>
+                    <span>Lima, Perú - importante para trabajos remotos</span>
                 </div>
                 <div class="contact-item">
                     <span class="contact-icon">💼</span>
@@ -1139,6 +1171,18 @@
                 <div class="contact-item">
                     <span class="contact-icon">🌐</span>
                     <a href="https://qdantexd.github.io/Web-Portfolio-Personal-1/" target="_blank">Portfolio Web</a>
+                </div>
+                
+                <!-- Botón Descargar CV -->
+                <div style="margin-top: 25px; padding-top: 25px; border-top: 1px solid var(--border-color);">
+                    <a href="cv.pdf" download="CV_Eddi_Salazar.pdf" class="download-cv-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Descargar CV (PDF)
+                    </a>
                 </div>
             </div>
             
@@ -1323,16 +1367,16 @@
                 </h2>
                 <div class="about-section">
                     <p class="about-text">
-                        Mi historia en programación comenzó con curiosidad por entender cómo funcionaban las aplicaciones web modernas. Empecé construyendo interfaces con HTML, CSS y JavaScript, y pronto descubrí que quería ir más allá: entender el rendimiento, la arquitectura, y cómo las máquinas realmente ejecutan código.
+                        Empecé programando porque me parecía interesante cómo funcionaban las aplicaciones web. Construía cosas con HTML, CSS y JavaScript, y con el tiempo fui queriendo entender mejor qué pasaba detrás de todo eso: el rendimiento, cómo se organiza el código, y cómo realmente funciona una computadora cuando ejecuta programas.
                     </p>
                     <p class="about-text">
-                        Esta búsqueda me llevó a explorar <strong>programación de sistemas</strong> con C++ y Rust, y finalmente a sumergirme en <strong>gráficos 3D</strong> con Vulkan. Construir un motor de renderizado desde cero cambió mi perspectiva: entendí que cada línea de código importa cuando trabajas a bajo nivel, y que el control total sobre memoria y performance es increíblemente poderoso.
+                        Eso me llevó a explorar <strong>programación de sistemas</strong> con C++ y Rust, y luego <strong>gráficos 3D</strong> con Vulkan. Construir un motor de renderizado desde cero me enseñó bastante: cuando trabajas a bajo nivel, cada decisión cuenta, y tener control sobre memoria y rendimiento hace una diferencia real.
                     </p>
                     <p class="about-text">
-                        Lo que me motiva es resolver problemas técnicos complejos y ver cómo diferentes capas de tecnología trabajan juntas. Puedo construir <strong>interfaces web modernas</strong> que los usuarios aman, pero también entiendo el código que se ejecuta en el hardware. Esta combinación única me permite pensar en soluciones completas: desde la experiencia del usuario hasta el rendimiento del sistema.
+                        Me gusta trabajar en problemas técnicos que requieren pensar en diferentes niveles de una aplicación. Puedo construir <strong>interfaces web</strong> que funcionen bien, pero también tengo experiencia trabajando más cerca del hardware. Eso me ayuda a pensar en soluciones que funcionen bien en ambos niveles.
                     </p>
                     <p class="about-text">
-                        Busco oportunidades donde pueda aplicar esta visión integral en proyectos desafiantes: motores gráficos, aplicaciones de alto rendimiento, o sistemas que requieran tanto excelencia en UX como optimización técnica profunda.
+                        Busco trabajar en proyectos interesantes donde pueda seguir aprendiendo y aportar con lo que sé: desarrollo web, sistemas, gráficos, o donde se necesite un enfoque que combine diferentes áreas.
                     </p>
                 </div>
             </div>
@@ -1340,20 +1384,20 @@
             <div class="main-section">
                 <h2 class="main-section-title">
                     <span class="section-icon">🎯</span>
-                    Propuesta de Valor Única
+                    Áreas de Enfoque
                 </h2>
                 <div class="value-proposition">
                     <div class="value-item">
                         <h3 class="value-title">🔧 Systems Programming</h3>
-                        <p class="value-description">Desarrollo de motores gráficos y sistemas de bajo nivel con C++, Rust, Vulkan. Control total sobre memoria, performance y pipelines de rendering.</p>
+                        <p class="value-description">Trabajo con C++, Rust y Vulkan para desarrollar sistemas y motores gráficos. Me interesa el control sobre memoria, rendimiento y cómo se procesan los gráficos.</p>
                     </div>
                     <div class="value-item">
                         <h3 class="value-title">🎨 Graphics & Rendering</h3>
-                        <p class="value-description">Especialización en gráficos 3D, shaders GLSL, y APIs modernas como Vulkan. Construcción de motores desde cero con arquitectura profesional.</p>
+                        <p class="value-description">Explorando gráficos 3D, shaders GLSL y APIs como Vulkan. He construido motores básicos desde cero para entender cómo funcionan internamente.</p>
                     </div>
                     <div class="value-item">
                         <h3 class="value-title">🌐 Full Stack Web</h3>
-                        <p class="value-description">Experiencia completa en desarrollo web moderno: Angular, React, Vue, Node.js, Python. Aplicaciones escalables con arquitectura limpia.</p>
+                        <p class="value-description">Desarrollo web con Angular, React, Vue, Node.js y Python. Construyo aplicaciones pensando en mantener el código organizado y funcional.</p>
                     </div>
                 </div>
             </div>
@@ -1391,11 +1435,11 @@
                     <p class="item-company">Independent Projects | GitHub Portfolio</p>
                     <div class="item-description">
                         <ul>
-                            <li>Sistemas de alto rendimiento: C++ y Rust para performance de bajo nivel y control de memoria</li>
-                            <li>Gráficos avanzados: implementación de motores con Vulkan para rendering profesional</li>
-                            <li>Programación de sistemas: desarrollo de motores 3D, optimización de memoria y pipelines</li>
-                            <li>Código profesional: Git/GitHub, código limpio, arquitectura modular</li>
-                            <li>Optimización: debugging sistemático, profiling y técnicas avanzadas de performance</li>
+                            <li>Trabajo con C++ y Rust para desarrollar sistemas que requieren control sobre memoria y rendimiento</li>
+                            <li>Implementación de motores gráficos con Vulkan para aprender sobre rendering y pipelines</li>
+                            <li>Desarrollo de proyectos en diferentes niveles: desde interfaces web hasta código más cercano al hardware</li>
+                            <li>Uso de Git/GitHub para versionado, manteniendo el código organizado y modular</li>
+                            <li>Práctica con debugging, profiling y técnicas para mejorar el rendimiento cuando es necesario</li>
                         </ul>
                     </div>
                 </div>
@@ -1437,10 +1481,10 @@
                             <h4 class="case-study-heading">✅ Resultados & Aprendizajes</h4>
                             <ul class="case-study-list">
                                 <li><strong>Motor funcional completo:</strong> Renderiza geometría 3D a 60 FPS con transformaciones en tiempo real (rotación, traslación, escalado)</li>
-                                <li><strong>Control total del pipeline:</strong> Implementé más de 800 líneas de código C++ gestionando manualmente memoria, buffers y sincronización</li>
-                                <li><strong>Arquitectura escalable:</strong> Código modular organizado en clases especializadas (SwapChain, Pipeline, DescriptorSet, Buffer) fácil de extender</li>
-                                <li><strong>Comprensión profunda:</strong> Dominio práctico de conceptos avanzados como UBOs, descriptor layouts, semáforos/fences que solo se aprenden construyendo desde cero</li>
-                                <li><strong>Diferenciador profesional:</strong> Este proyecto coloca mi perfil en el top 1% de desarrolladores con experiencia real en gráficos de bajo nivel</li>
+                                <li><strong>Implementación del pipeline:</strong> Más de 800 líneas de código C++ donde gestioné manualmente memoria, buffers y sincronización</li>
+                                <li><strong>Organización del código:</strong> Código modular organizado en clases especializadas (SwapChain, Pipeline, DescriptorSet, Buffer) que facilita agregar nuevas funcionalidades</li>
+                                <li><strong>Aprendizaje práctico:</strong> Trabajé con conceptos como UBOs, descriptor layouts, semáforos y fences, que aprendí construyendo el proyecto desde cero</li>
+                                <li><strong>Aprendizaje práctico:</strong> Este proyecto me dio experiencia real trabajando con gráficos de bajo nivel, que es algo que no muchos desarrolladores tienen la oportunidad de explorar</li>
                             </ul>
                         </div>
                         
